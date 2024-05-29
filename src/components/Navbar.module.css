@@ -3,8 +3,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 
 .navList {

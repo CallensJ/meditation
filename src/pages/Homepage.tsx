@@ -51,6 +51,14 @@ function Gallery(){
   return(
     <div className={styles.galleryContainer}>
       <img src="../img1.jpg" className={styles.image}/>
+      <img src="../img2.jpg" className={styles.image}/>
+      <img src="../img3.jpg" className={styles.image}/>
+      <img src="../img4.jpg" className={styles.image}/>
+      <img src="../img5.jpg" className={styles.image}/>
+      <img src="../img6.jpg" className={styles.image}/>
+      <img src="../img7.jpg" className={styles.image}/>
+      <img src="../img8.jpg" className={styles.image}/>
+      <img src="../img9.jpg" className={styles.image}/>
     </div>
   )
 }

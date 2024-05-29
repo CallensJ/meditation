@@ -36,10 +36,10 @@
 .introduction {
   background-color: var(--heading-isabelline);
   padding-top: 6rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 .introduction .textContainer {
-  padding-left: 2rem;
-  padding-right: 2rem;
   max-width: 30%;
 }
 .textContainer .title {
@@ -63,15 +63,16 @@
 .gallery {
   padding-left: 2rem;
   padding-right: 2rem;
-  width: 80%;
-  margin: 0 auto;
 }
-.gallery .galleryContainer{
-  border: 1px solid black;
-  margin-top: 20rem;
+.gallery .galleryContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  max-width: 98rem;
+  margin: 20rem auto;
+  gap: 4rem;
 }
 
-.gallery .image{
+.gallery .image {
   width: 30rem;
   height: 30rem;
   object-fit: cover;
