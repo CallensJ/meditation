@@ -1,14 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 1000
+
+.dm-sans-<uniquifier> {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+.dm-sans-light {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+} 
+.dm-sans-regular {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+} 
+
+
+
+
+.abhaya-libre-regular {
+  font-family: "Abhaya Libre", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.abhaya-libre-medium {
+  font-family: "Abhaya Libre", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.abhaya-libre-semibold {
+  font-family: "Abhaya Libre", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.abhaya-libre-bold {
+  font-family: "Abhaya Libre", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.abhaya-libre-extrabold {
+  font-family: "Abhaya Libre", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+
 /* global variables */
 :root {
-  --color-brand--1: #ffb545;
-  --color-brand--2: #00c46a;
+  --heading-isabelline: #f9f6f2;
+  --text-lion-brown-color: #b08f6d;
+  --coyote-brown: #87694b;
+  --color-cadete-gray: #9daeb2;
 
-  --color-dark--0: #242a2e;
-  --color-dark--1: #2d3439;
-  --color-dark--2: #42484d;
-  --color-light--1: #aaa;
-  --color-light--2: #ececec;
-  --color-light--3: #d6dee0;
+  --sage-light-green: #b2af93;
+  --color-parchment-light: #ede5d1;
 }
 
 * {
@@ -23,7 +79,8 @@ html {
 }
 
 body {
-
   font-weight: 400;
-  line-height: 1.6;
+
 }
+
+

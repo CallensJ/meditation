@@ -1,0 +1,35 @@
+.nav {
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.navList {
+  display: flex;
+  justify-content: space-between;
+  width: 60rem;
+}
+.navList li{
+    list-style-type: none;
+}
+.nav a:link,
+.nav a:visited {
+  text-decoration: none;
+  color: var(--heading-isabelline);
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  font-style: normal;
+}
+/* CTA link */
+
+.ctaLink {
+  background-color: var(--coyote-brown);
+  padding: 1.4rem 3rem;
+}
