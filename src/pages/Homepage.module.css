@@ -1,7 +1,78 @@
-.homepage{
-    height: 100vh;
-    background-image: url("../background.jpg");
-    background-size: cover;
-    background-position: top;
+/* hero section(1) */
+.homepage .hero {
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(36, 42, 46, 0.5),
+      rgba(36, 42, 46, 0.5)
+    ),
+    url("../background.jpg");
+  background-size: cover;
+  background-position: top;
+}
+.homepage .heroTitle {
+  display: flex;
+  flex-direction: column;
+  height: 85%;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  text-align: center;
+}
+.homepage h1 {
+  font-family: "Poiret One", sans-serif;
+  font-weight: 400;
+  font-size: 20rem;
+  color: var(--coyote-brown);
+}
+.homepage h3 {
+  font-family: "Poiret One", sans-serif;
+  font-weight: bold;
+  color: var(--heading-isabelline);
+  font-size: 4rem;
+}
 
+/* introduction section(2nd) */
+
+.introduction {
+  background-color: var(--heading-isabelline);
+  padding-top: 6rem;
+}
+.introduction .textContainer {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  max-width: 30%;
+}
+.textContainer .title {
+  color: var(--coyote-brown);
+  font-family: "Abhaya Libre", serif;
+  font-weight: 400;
+  font-size: 5rem;
+}
+.textContainer p {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-size: 1.7rem;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  color: var(--text-lion-brown-color);
+}
+
+/* gallery section */
+
+.gallery {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: 80%;
+  margin: 0 auto;
+}
+.gallery .galleryContainer{
+  border: 1px solid black;
+  margin-top: 20rem;
+}
+
+.gallery .image{
+  width: 30rem;
+  height: 30rem;
+  object-fit: cover;
 }

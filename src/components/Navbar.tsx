@@ -14,7 +14,7 @@ export default function Navbar() {
           <NavLink to="/services">Services</NavLink>
         </li>
         <li>
-          <NavLink to="/evenement">Evenement</NavLink>
+          <NavLink to="/evenement">Evenements</NavLink>
         </li>
         <li>
           <NavLink to="/contact" className={styles.ctaLink}>

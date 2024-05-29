@@ -1,20 +1,17 @@
+.logo {
+  font-size: 2rem;
+  font-family: "Poiret One", sans-serif;
 
-
-
-.logo{
-    font-size: 2rem;
-    font-family: "Poiret One", sans-serif;
-
-    font-weight: 400;
-    text-align: center;
-    color:var(--text-lion-brown-color);
+  font-weight: 400;
+  text-align: center;
+  color: var(--coyote-brown);
 }
 
-.logo h2{
-    font-size: 5rem;
-    letter-spacing: .3rem;
-
+.logo h2 {
+  font-size: 5rem;
+  letter-spacing: 0.3rem;
 }
-.logo span{
-    letter-spacing: .5rem;
+.logo span {
+  letter-spacing: 0.5rem;
+  color: var(--sage-light-green);
 }
