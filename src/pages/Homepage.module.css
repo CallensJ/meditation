@@ -63,14 +63,28 @@
 .gallery {
   padding-left: 2rem;
   padding-right: 2rem;
+  background-color: var(--heading-isabelline);
 }
 .gallery .galleryContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  max-width: 98rem;
-  margin: 20rem auto;
-  gap: 4rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  max-width: 90rem;
+  margin: 0 auto;
+  padding-top: 20rem;
+  padding-bottom: 20rem;
 }
+
+.galleryContainer div {
+  border: 2px solid var(--sage-light-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+
 
 .gallery .image {
   width: 30rem;

@@ -1,11 +1,60 @@
 import Navbar from "../components/Navbar";
+import Banner from "../components/Banner";
 import styles from "./Homepage.module.css";
+
+const images = [
+  {
+    id: 1,
+    front: "../img1.jpg",
+    back: " scéance de Yoga en pleine nature",
+  },
+  {
+    id: 2,
+    front: "../img2.jpg",
+    back: "Pour voir le monde dans un grain de sable et un paradis dans une fleur sauvage,, tenez l'infini dans la paume de votre main et l'eternité dans une heure",
+  },
+  {
+    id: 3,
+    front: "../img3.jpg",
+    back: " scéance de médiation dès le matin",
+  },
+  {
+    id: 4,
+    front: "../img4.jpg",
+    back: " scéance de Yoga en pleine nature",
+  },
+  {
+    id: 5,
+    front: "../img5.jpg",
+    back: " scéance de Yoga en pleine nature",
+  },
+  {
+    id: 6,
+    front: "../img6.jpg",
+    back: " scéance de Yoga en pleine nature",
+  },
+  {
+    id: 7,
+    front: "../img7.jpg",
+    back: " scéance de Yoga en pleine nature",
+  },
+  {
+    id: 8,
+    front: "../img8.jpg",
+    back: " scéance de Yoga en pleine nature",
+  },
+  {
+    id: 9,
+    front: "../img9.jpg",
+    back: " scéance de Yoga en pleine nature",
+  },
+];
 
 export default function Homepage() {
   return (
     <main className={styles.homepage}>
       <section className={styles.hero}>
-         <Navbar />
+        <Navbar />
         <div className={styles.heroTitle}>
           <h1>Harmonya</h1>
           <h3>Meditation et guérison par les sons</h3>
@@ -39,26 +88,24 @@ export default function Homepage() {
         </div>
       </section>
       <section className={styles.gallery}>
-        <Gallery />
+        <div className={styles.galleryContainer}>
+          {images.map((image) => (
+            <GridImages image={image} />
+          ))}
+        </div>
       </section>
+      <Banner />
+
     </main>
   );
 }
 
-
-
-function Gallery(){
-  return(
-    <div className={styles.galleryContainer}>
-      <img src="../img1.jpg" className={styles.image}/>
-      <img src="../img2.jpg" className={styles.image}/>
-      <img src="../img3.jpg" className={styles.image}/>
-      <img src="../img4.jpg" className={styles.image}/>
-      <img src="../img5.jpg" className={styles.image}/>
-      <img src="../img6.jpg" className={styles.image}/>
-      <img src="../img7.jpg" className={styles.image}/>
-      <img src="../img8.jpg" className={styles.image}/>
-      <img src="../img9.jpg" className={styles.image}/>
+function GridImages({ image }) {
+  return (
+    <div>
+      <img src={image.front} className={styles.image} />
     </div>
-  )
+  );
 }
+
+
