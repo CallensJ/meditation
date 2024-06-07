@@ -1,4 +1,12 @@
-const dataCards = [
+// Define the interface for a data card
+interface DataCard {
+  id: number;
+  title: string;
+  icon: string;
+  description: string;
+}
+
+const dataCards: DataCard[] = [
   {
     id: 1,
     title: "Massage",
@@ -48,7 +56,12 @@ function Cards() {
   );
 }
 
-function Card({ data }) {
+// Define the props for the Card component
+interface CardProps {
+  data: DataCard;
+}
+
+function Card({ data }: CardProps) {
   return (
     <div className={styles.card}>
       <div>

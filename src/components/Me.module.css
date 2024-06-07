@@ -1,0 +1,49 @@
+.aboutMe {
+  background-color: var(--heading-isabelline);
+  padding: 6rem;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+.flex .avatar {
+  width: 36rem;
+  height: auto;
+  object-fit: contain;
+}
+
+.myintro {
+  font-family: "Abhaya Libre", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 6rem;
+  padding-left: 10rem;
+  font-size: 2.2rem;
+
+}
+
+.myintro .welcome{
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.8rem;
+  color: black;
+}
+
+.myintro .title {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 5rem;
+  color:var( --sage-light-green);
+}
+.myintro .description{
+  line-height: 3.2rem;
+  padding-top: 1rem;
+
+}

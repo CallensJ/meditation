@@ -1,8 +1,18 @@
+
+import styles from "./Homepage.module.css";
+import Me from "../components/Me";
 import Navbar from "../components/Navbar";
 import Banner from "../components/Banner";
-import styles from "./Homepage.module.css";
 
-const images = [
+// Define the interface for a data card
+interface ImagesInterface {
+  id: number;
+  front: string;
+  back: string;
+
+}
+
+const images:ImagesInterface[] = [
   {
     id: 1,
     front: "../img1.jpg",
@@ -90,17 +100,23 @@ export default function Homepage() {
       <section className={styles.gallery}>
         <div className={styles.galleryContainer}>
           {images.map((image) => (
-            <GridImages image={image} />
+              <GridImage image={image} key={image.id} />
           ))}
         </div>
       </section>
       <Banner />
-
+        <Me />
     </main>
   );
 }
 
-function GridImages({ image }) {
+// Define the props for the images component
+interface ImageProps {
+  image: ImagesInterface;
+}
+
+
+function GridImage({ image }: ImageProps) {
   return (
     <div>
       <img src={image.front} className={styles.image} />

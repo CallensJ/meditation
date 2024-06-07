@@ -1,11 +1,11 @@
 .banner {
   background-color: var(--sage-light-green);
-  padding: 2rem 0;
+  padding: 2rem 6rem;
 }
 
 .cards {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
