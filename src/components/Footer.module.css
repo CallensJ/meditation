@@ -11,6 +11,13 @@ footer {
 .bloc {
 
 }
+.bloc1 div, .bloc3 div{
+ display: flex;
+ align-items: center;
+}
+.bloc1 div .icon, .bloc3 div .icon{
+margin-right: rem;
+ }
 
 .bloc1,
 .bloc2,
@@ -20,6 +27,7 @@ footer {
   flex-direction: column;
   padding: 1rem;
 }
+
 
 .bloc1,
 .bloc3 {
@@ -45,7 +53,11 @@ footer {
 .bloc2 span {
   text-align: center;
   color: var(--text-lion-brown-color);
+}
 
 
-  
+@media (max-width: 430px) {
+footer{
+  height: 100%;
+}
 }
