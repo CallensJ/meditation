@@ -1,0 +1,79 @@
+.section {
+  padding: 6rem;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  background-color: var(--sage-light-green);
+
+}
+
+.textBloc {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.textBloc .title {  
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 5rem;
+  padding-top: 4rem;
+}
+
+.textBloc .text {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.8rem;
+  color: black;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  line-height: 3rem;
+}
+
+.blocsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.blocsContainer .bloc {
+  width: 45rem;
+  height: 40rem;
+  background-color: var(--heading-isabelline);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+
+}
+
+.bloc .icon {
+  width: 6rem;
+  height: 6rem;
+}
+
+.bloc .title3 {
+  font-family: "Abhaya Libre", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.8rem;
+  text-transform: uppercase;
+}
+
+.bloc .text {
+  
+  padding-top: 2rem;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.8rem;
+  color: black;
+  line-height: 3rem;
+}

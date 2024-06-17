@@ -1,0 +1,41 @@
+.teamSection {
+  padding-top: 20rem;
+  padding-bottom: 10rem;
+}
+.sectionTitle {
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 5rem;
+}
+
+.container .bloc {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 90rem;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.card .avatar {
+  max-width: 25rem;
+  height: auto;
+  object-fit: contain;
+}
+
+.card h4 {
+  font-family: "Abhaya Libre", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+.card p {
+  font-family: "Abhaya Libre", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.6rem;
+}

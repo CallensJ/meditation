@@ -5,11 +5,11 @@ export default function Me() {
   return (
     <section className={styles.aboutMe}>
       <div className={styles.flex}>
-        <img src={angela} alt="" className={styles.avatar} />
+        <img src={angela} alt="angela" className={styles.avatar} />
         <div className={styles.myintro}>
           <h3 className={styles.welcome}>Bonjour , </h3>
 
-          <h2 className={styles.title}>Moi c'est Cassandra</h2>
+          <h2 className={styles.title}>Moi c'est Angela</h2>
           <p className={styles.description}>
             {" "}
             Entrepreneuse passionnée par le bien-être et l'épanouissement

@@ -1,18 +1,19 @@
-
 import styles from "./Homepage.module.css";
 import Me from "../components/Me";
 import Navbar from "../components/Navbar";
 import Banner from "../components/Banner";
+
+import Footer from "../components/Footer";
+import Team from "../components/Team";
 
 // Define the interface for a data card
 interface ImagesInterface {
   id: number;
   front: string;
   back: string;
-
 }
 
-const images:ImagesInterface[] = [
+const images: ImagesInterface[] = [
   {
     id: 1,
     front: "../img1.jpg",
@@ -65,9 +66,9 @@ export default function Homepage() {
     <main className={styles.homepage}>
       <section className={styles.hero}>
         <Navbar />
-        <div className={styles.heroTitle}>
+        <div className={styles.titlesContainer}>
           <h1>Harmonya</h1>
-          <h3>Meditation et guérison par les sons</h3>
+          <h3 className={styles.title3}>Meditation et guérison par les sons</h3>
         </div>
       </section>
 
@@ -100,12 +101,15 @@ export default function Homepage() {
       <section className={styles.gallery}>
         <div className={styles.galleryContainer}>
           {images.map((image) => (
-              <GridImage image={image} key={image.id} />
+            <GridImage image={image} key={image.id} />
           ))}
         </div>
       </section>
       <Banner />
-        <Me />
+      <Me />
+      <Team />
+      
+      <Footer />
     </main>
   );
 }
@@ -115,7 +119,6 @@ interface ImageProps {
   image: ImagesInterface;
 }
 
-
 function GridImage({ image }: ImageProps) {
   return (
     <div>
@@ -123,5 +126,3 @@ function GridImage({ image }: ImageProps) {
     </div>
   );
 }
-
-

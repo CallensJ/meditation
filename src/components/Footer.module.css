@@ -1,0 +1,51 @@
+footer {
+    background-color: var(--sage-light-green);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 6rem;
+  height: 16rem;
+}
+
+.bloc {
+
+}
+
+.bloc1,
+.bloc2,
+.bloc3 {
+
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.bloc1,
+.bloc3 {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.6rem;
+  color: var(--coyote-brown);
+}
+.bloc1 span,.bloc2 span,
+.bloc3 span {
+  padding: .5rem;
+}
+
+.bloc2 h2 {
+  font-family: "Poiret One", sans-serif;
+  font-weight: bold;
+  font-size: 4rem;
+  color: var(--text-lion-brown-color);
+}
+
+.bloc2 span {
+  text-align: center;
+  color: var(--text-lion-brown-color);
+
+
+  
+}
