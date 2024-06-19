@@ -1,27 +1,32 @@
-import { NavLink } from "react-router-dom";
-import Logo from "./Logo";
-import styles from "./Navbar.module.css";
+import React, { useState } from 'react';
+import { Icon } from 'react-icons-kit';
+import { menu } from 'react-icons-kit/feather/menu';
+import { x } from 'react-icons-kit/feather/x';
+import styles from './Navbar.module.css';
 
-export default function Navbar() {
+const Navbar: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <nav className={styles.nav}>
-      <Logo />
-      <ul className={styles.navList}>
-        <li>
-          <NavLink to="/about">A propos</NavLink>
-        </li>
-        <li>
-          <NavLink to="/services">Services</NavLink>
-        </li>
-        <li>
-          <NavLink to="/evenement">Evenements</NavLink>
-        </li>
-        <li>
-          <NavLink to="/contact" className={styles.ctaLink}>
-            Discutons
-          </NavLink>
-        </li>
-      </ul>
+    <nav className={styles.navbar}>
+      <div className={styles.navbarContainer}>
+        <div className={styles.logo}>MyLogo</div>
+        <div className={styles.menuIcon} onClick={toggleNavbar}>
+          <Icon icon={isOpen ? x : menu} size={24} />
+        </div>
+        <ul className={`${styles.navMenu} ${isOpen ? styles.active : ''}`}>
+          <li className={styles.navItem}><a href="#home" className={styles.navLinks}>Home</a></li>
+          <li className={styles.navItem}><a href="#about" className={styles.navLinks}>About</a></li>
+          <li className={styles.navItem}><a href="#services" className={styles.navLinks}>Services</a></li>
+          <li className={styles.navItem}><a href="#contact" className={styles.navLinks}>Contact</a></li>
+        </ul>
+      </div>
     </nav>
   );
-}
+};
+
+export default Navbar;

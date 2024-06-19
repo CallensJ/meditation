@@ -36,8 +36,9 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (min-width: 800px) {
   .gallery .galleryContainer {
     grid-template-columns: 1fr 1fr;
+
   }
 }

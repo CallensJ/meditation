@@ -9,7 +9,7 @@ import Gallery from "../components/Gallery";
 
 
 
-export default function Homepage() {
+const HomePage: React.FC = () => {
   return (
     <main className={styles.homepage}>
       <section className={styles.hero}>
@@ -56,3 +56,4 @@ export default function Homepage() {
   );
 }
 
+export default HomePage;
