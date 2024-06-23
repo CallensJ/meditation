@@ -1,8 +1,12 @@
 import GetReady from "../components/GetReady";
 
 
+
 export default function Services() {
   return (
-   <GetReady />
+    <div>
+     
+      <GetReady />
+    </div>
   )
 }

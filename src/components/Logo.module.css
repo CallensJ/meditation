@@ -1,10 +1,10 @@
 .logo {
   font-size: 2rem;
   font-family: "Poiret One", sans-serif;
-
   font-weight: 400;
   text-align: center;
-  color: var(--coyote-brown);
+ 
+  color: var(--sage-light-green);
 }
 
 .logo h2 {
@@ -13,5 +13,10 @@
 }
 .logo span {
   letter-spacing: 0.5rem;
-  color: var(--sage-light-green);
+  font-weight: bold;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  color: var(--heading-isabelline);
 }
+
