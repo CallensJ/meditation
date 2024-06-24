@@ -1,5 +1,5 @@
 footer {
-    background-color: var(--sage-light-green);
+  background-color: var(--sage-light-green);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,26 +8,23 @@ footer {
   height: 16rem;
 }
 
-.bloc {
-
+.bloc1 div,
+.bloc3 div {
+  display: flex;
+  align-items: center;
 }
-.bloc1 div, .bloc3 div{
- display: flex;
- align-items: center;
+.bloc1 div .icon,
+.bloc3 div .icon {
+  margin-right: rem;
 }
-.bloc1 div .icon, .bloc3 div .icon{
-margin-right: rem;
- }
 
 .bloc1,
 .bloc2,
 .bloc3 {
-
   display: flex;
   flex-direction: column;
   padding: 1rem;
 }
-
 
 .bloc1,
 .bloc3 {
@@ -38,9 +35,10 @@ margin-right: rem;
   font-size: 1.6rem;
   color: var(--coyote-brown);
 }
-.bloc1 span,.bloc2 span,
+.bloc1 span,
+.bloc2 span,
 .bloc3 span {
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .bloc2 h2 {
@@ -55,9 +53,21 @@ margin-right: rem;
   color: var(--text-lion-brown-color);
 }
 
+@media (max-width: 700px) {
+  footer {
+    height: 100%;
+  }
+  .bloc {
+    width: 100%;
 
-@media (max-width: 430px) {
-footer{
-  height: 100%;
-}
+  }
+  .bloc1 div,
+  .bloc3 div {
+    width: 80%;
+    margin: 0 auto;
+ 
+  }
+  .bloc2 {
+    text-align: center;
+  }
 }
