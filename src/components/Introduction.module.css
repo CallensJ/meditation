@@ -1,0 +1,36 @@
+/* introduction section(2nd) */
+
+.introduction {
+    background-color: var(--heading-isabelline);
+    padding-top: 6rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+  .introduction .textContainer {
+    width: 30%;
+  }
+  .textContainer .title {
+    color: var(--coyote-brown);
+    font-family: "Abhaya Libre", serif;
+    font-weight: 400;
+    font-size: 5rem;
+  }
+  .textContainer p {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 1.7rem;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    color: var(--text-lion-brown-color);
+    line-height: 2.6rem;
+  }
+
+  
+@media screen and (max-width: 700px) {
+    .introduction .textContainer {
+        width: 100%;
+        text-align: center;
+      }
+
+}
