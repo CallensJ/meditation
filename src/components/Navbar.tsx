@@ -46,7 +46,7 @@ const Navbar: React.FC = () => {
       if (isOpen) {
         gsap.to(menuRef.current, { x: 0, duration: 0.5 });
       } else {
-        gsap.to(menuRef.current, { x: '-100%', duration: 0.5 });
+        gsap.to(menuRef.current, { x: '0', duration: 0.5 });
       }
     }
   }, [isOpen]);
@@ -80,16 +80,7 @@ const Navbar: React.FC = () => {
               Accueil
             </NavLink>
           </li>
-          <li className={styles.navItem}>
-            <NavLink
-              to="/about"
-              className={({ isActive }) =>
-                classNames(styles.navLinks, { [styles.active]: isActive })
-              }
-            >
-              A propos
-            </NavLink>
-          </li>
+  
           <li className={styles.navItem}>
             <NavLink
               to="/events"
@@ -108,6 +99,16 @@ const Navbar: React.FC = () => {
               }
             >
               Services
+            </NavLink>
+          </li>
+          <li className={styles.navItem}>
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                classNames(styles.navLinks,styles.buttonCTA, { [styles.active]: isActive })
+              }
+            >
+              Discutons
             </NavLink>
           </li>
         </ul>

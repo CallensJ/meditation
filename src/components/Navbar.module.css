@@ -1,37 +1,21 @@
-/* .navbar {
-  height: 6rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
-}
-
-.navbarContainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 7rem;
-  width: 100%;
-  border: 1px solid red;
-  padding: 0 6rem;
-} */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 10rem; 
+  height: 10rem;
   color: #fff;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 0 6rem;
-  z-index: 1000; 
-  transition: background-color 0.3s ease;
 
+  padding: 0 6rem;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
 }
 .navbar.scrolled {
-  background-color: var( --coyote-brown);/* Couleur de fond lorsque l'on scroll */
+  background-color: var(
+    --coyote-brown
+  ); /* Couleur de fond lorsque l'on scroll */
 }
 
 .navbarContainer {
@@ -46,12 +30,14 @@
 }
 
 .navMenu {
+  width: 50rem;
   display: flex;
-  align-items: center;
+  height: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
   list-style: none;
   text-align: center;
   margin: 0;
-  
 }
 
 .navItem {
@@ -65,25 +51,22 @@
   font-style: normal;
   color: #fff;
   text-decoration: none;
-  padding: 0.5rem 1rem;
-  height: 100%;
-  display: flex;
-  align-items: center;
   font-size: 1.8rem;
+}
+.navLinks:hover {
+  color: var(--color-cadete-gray);
 }
 .active {
   color: red; /* ou un autre style pour indiquer l'élément actif */
 }
-
+.buttonCTA {
+  padding: 1rem 3rem;
+  background-color: var(--text-lion-brown-color);
+}
 @media screen and (max-width: 700px) {
-
-
   .navbarContainer {
-    
     justify-content: space-between;
     align-items: center;
-   
-   
   }
 
   .menuIcon {
@@ -92,11 +75,11 @@
   }
 
   .navMenu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 100%;
     height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     top: 10rem;
     left: -100%;
@@ -104,22 +87,17 @@
     transition: all 0.5s ease;
     background: var(--coyote-brown);
   }
+  .navMenu .navItem {
+    width: 100%;
+    align-content: center;
+    margin: 1rem;
+  }
 
   .navMenu.active {
     left: 0;
   }
 
-  .navItem {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-  }
-
   .navLinks {
-    padding: 2rem;
-    width: 100%;
     text-align: center;
     margin: 0 auto;
   }
