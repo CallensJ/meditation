@@ -6,6 +6,8 @@ import Services from "./pages/Services";
 import Events from "./pages/Events";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Contact from "./pages/Contact";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/events" element={<Events />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </>
