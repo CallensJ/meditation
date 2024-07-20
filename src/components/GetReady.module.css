@@ -41,6 +41,7 @@
 }
 
 .blocsContainer .bloc {
+  border-radius: 4rem;
   width: 40rem;
   background-color: var(--color-white);
   display: flex;
@@ -99,7 +100,10 @@ font-size: 3rem;
   font-style: normal;
   margin: 1rem 0;
 }
-
+.cta:hover{
+  background: var(--color-light-orange);
+  transition: all .4s;
+}
 @media (max-width: 700px) {
   .blocsContainer .bloc {
     margin: 1rem auto;

@@ -3,6 +3,11 @@ import styles from "./Footer.module.css";
 import { FaRegAddressBook } from "react-icons/fa";
 
 export default function Footer() {
+  const hour = new Date().getHours();
+  const openHour = 0o6;
+  const closeHour = 18;
+  const isOpen = hour >= openHour && hour <= closeHour;
+
   return (
     <footer>
       <div className={styles.bloc}>
@@ -31,7 +36,14 @@ export default function Footer() {
           </div>
           <div>
             <CiClock1 className={styles.icon} />
-            <span>8h00 - 20h00 </span>
+            {isOpen ? (
+              <span>nous sommes ouvert</span>
+            ) : (
+              <span>
+                Nous sommes actuellement ferme. venez entre {openHour}h00 et{" "}
+                {closeHour}h00
+              </span>
+            )}
           </div>
         </div>
       </div>

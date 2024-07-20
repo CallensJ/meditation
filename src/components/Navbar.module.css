@@ -57,7 +57,7 @@
   color: var(--color-very-dark-grey);
 }
 .active {
-  color: red; /* ou un autre style pour indiquer l'élément actif */
+  color: var(--color-dark-grey); 
 }
 .buttonCTA {
   padding: 1rem 3rem;
@@ -66,14 +66,20 @@
   background-color:var(--color-orange);
 }
 @media screen and (max-width: 700px) {
+  .navbar{
+    padding: 0;
+  }
   .navbarContainer {
     justify-content: space-between;
     align-items: center;
+    background-color:var(--color-white);
   }
 
   .menuIcon {
     display: block;
-    color: #fff;
+    color: var(--color-light-orange);
+    border-radius: 100%;
+    border: 1px solid orange;
   }
 
   .navMenu {
@@ -87,20 +93,23 @@
     left: -100%;
     opacity: 1;
     transition: all 0.5s ease;
-    background: var(--coyote-brown);
+    background: var(--color-orange);
+    border-top-left-radius: 6rem;
+    border-top-right-radius: 6rem;
   }
   .navMenu .navItem {
     width: 100%;
     align-content: center;
-    margin: 1rem;
+    margin: 1rem auto;
   }
-
+  
   .navMenu.active {
     left: 0;
   }
-
+  
   .navLinks {
     text-align: center;
-    margin: 0 auto;
+    font-size: 3rem;
+   
   }
 }
