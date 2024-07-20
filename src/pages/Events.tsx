@@ -1,3 +1,4 @@
+import { useState } from "react";
 import styles from "./Events.module.css";
 
 export default function Events() {
@@ -5,39 +6,79 @@ export default function Events() {
     <section className={styles.eventSection}>
       <h2>evenements</h2>
     
-      <Cards />
+      <WeeklyCalendar />
     </section>
   );
 }
 
-function Cards() {
-  return (
-    <div className={styles.cardsContainer}>
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-    </div>
-  );
-}
 
-function Card() {
+
+type Session = {
+  sessionName: string;
+  time: string;
+  duration: number;
+  instructor: string;
+};
+
+type Schedule = {
+  [key: string]: Session[];
+};
+
+const daysOfWeek: string[] = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+
+const baseSchedule: Session[] = [
+  { sessionName: 'Hatha Yoga', time: '8:00 am - 9:30 am', duration: 90, instructor: 'Wendy Daniel' },
+  { sessionName: 'Ashtanga Yoga', time: '9:30 am - 10:50 am', duration: 80, instructor: 'Andy Gottlieb' },
+  { sessionName: 'Meditation', time: '12:30 pm - 1:30 pm', duration: 60, instructor: 'Simon Hayes Jr.' },
+  { sessionName: 'Kundalini Yoga', time: '3:30 pm - 5:00 pm', duration: 90, instructor: 'Audrey Berge' },
+  { sessionName: 'Vinyasa Flow', time: '5:00 pm - 6:15 pm', duration: 75, instructor: 'Sheryl Hayes' },
+  { sessionName: 'Restorative Yoga', time: '6:30 pm - 7:30 pm', duration: 60, instructor: 'Lindsay Corwin' },
+];
+
+const randomizeSessions = (sessions: Session[]): Session[] => {
+  return sessions.map(session => ({
+    ...session,
+    duration: session.duration + Math.floor(Math.random() * 10) - 5, // Randomize duration slightly
+  }));
+};
+
+const schedule: Schedule = daysOfWeek.reduce((acc, day) => {
+  acc[day] = randomizeSessions(baseSchedule);
+  return acc;
+}, {} as Schedule);
+
+function WeeklyCalendar()  {
+  const [selectedDay, setSelectedDay] = useState<string>('Monday');
   return (
-    <div className={styles.card}>
-      <div className={styles.imageContainer}>
-        <img src="./img1.jpg" className={styles.image} alt="card image"/>
+    <div className={styles.calendarContainer}>
+      <div className={styles.daysMenu}>
+        {daysOfWeek.map((day) => (
+          <button
+            key={day}
+            className={`${styles.dayButton} ${selectedDay === day ? styles.active : ''}`}
+            onClick={() => setSelectedDay(day)}
+          >
+            {day}
+          </button>
+        ))}
       </div>
-      <div className={styles.cardContent}>
-        <h3 className={styles.cardTitle}>Event title</h3>
-        <p className={styles.cardText}>
-          this is a little introduction about the event. this is a class for
-          beginner section.
-        </p>
-      </div>
-      <div className={styles.cardFooter}>
-        <button className={styles.cta}>Reserver</button>
-        <span className={styles.price}>150$</span>
+      <div className={styles.calendar}>
+        <div className={styles.dayColumn}>
+          <h2>{selectedDay}</h2>
+          {schedule[selectedDay].map((session, index) => (
+            <div key={index} className={styles.session}>
+              <h3>{session.sessionName}</h3>
+              <p>Time: {session.time}</p>
+              <p>Duration: {session.duration} minutes</p>
+              <p className={styles.instructor}>
+                <span className={styles.instructorIcon}></span> {session.instructor}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
-  );
-}
+  )}
+  
+
+
