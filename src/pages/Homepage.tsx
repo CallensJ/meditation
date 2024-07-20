@@ -7,6 +7,7 @@ import Introduction from "../components/Introduction";
 
 
 
+
 const HomePage: React.FC = () => {
   return (
     <main className={styles.homepage}>
@@ -23,6 +24,7 @@ const HomePage: React.FC = () => {
       <Banner />
       <Me />
       <Team />
+   
       
      
     </main>

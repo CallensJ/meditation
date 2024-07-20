@@ -31,6 +31,8 @@ export default function GetReady() {
               ab dolorum repellendus?
             </p>
           </div>
+          <span className={styles.pricing}>$50</span>
+          <button className={styles.cta}>Reserver</button>
         </div>
 
         <div className={styles.bloc}>
@@ -44,6 +46,8 @@ export default function GetReady() {
               ab dolorum repellendus?
             </p>
           </div>
+          <span className={styles.pricing}>$50</span>
+          <button className={styles.cta}>Reserver</button>
         </div>
 
         <div className={styles.bloc}>
@@ -57,6 +61,8 @@ export default function GetReady() {
               ab dolorum repellendus?
             </p>
           </div>
+          <span className={styles.pricing}>$50</span>
+          <button className={styles.cta}>Reserver</button>
         </div>
       </div>
     </section>

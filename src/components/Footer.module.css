@@ -1,6 +1,6 @@
 footer {
 
-  background-color: var(--sage-light-green);
+  background-color: var(--color-black);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,7 +34,7 @@ footer {
   font-weight: 400;
   font-style: normal;
   font-size: 1.6rem;
-  color: var(--coyote-brown);
+  color: var(--color-white);
 }
 .bloc1 span,
 .bloc2 span,
@@ -46,12 +46,12 @@ footer {
   font-family: "Poiret One", sans-serif;
   font-weight: bold;
   font-size: 4rem;
-  color: var(--text-lion-brown-color);
+  color: var(--color-light-orange);
 }
 
 .bloc2 span {
   text-align: center;
-  color: var(--text-lion-brown-color);
+  color: var(--color-light-orange);
 }
 
 @media (max-width: 700px) {

@@ -10,7 +10,7 @@
     width: 30%;
   }
   .textContainer .title {
-    color: var(--coyote-brown);
+    color: var(--color-black);
     font-family: "Abhaya Libre", serif;
     font-weight: 400;
     font-size: 5rem;
@@ -18,11 +18,11 @@
   .textContainer p {
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.7rem;
     padding-top: 1rem;
     margin-top: 1rem;
-    color: var(--text-lion-brown-color);
+    color: var(--color-very-dark-grey);
     line-height: 2.6rem;
   }
 

@@ -3,7 +3,7 @@
   text-align: center;
   margin: 0 auto;
   width: 100%;
-  background-color: var(--sage-light-green);
+  background-color: var(--color-light-grey);
 }
 
 .textBloc {
@@ -41,14 +41,16 @@
 }
 
 .blocsContainer .bloc {
-  width: 45rem;
-  height: 40rem;
-  background-color: var(--heading-isabelline);
+  width: 40rem;
+  background-color: var(--color-white);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 2rem;
+  padding: 4rem;
+  -webkit-box-shadow: 4px 3px 12px 0px rgba(255,145,83,0.30);
+  -moz-box-shadow: 4px 3px 12px 0px rgba(255,145,83,0.30);
+  box-shadow: 4px 3px 12px 0px rgba(255,145,83,0.30);
 }
 
 .bloc .icon {
@@ -63,6 +65,7 @@
   font-size: 2.6rem;
   text-transform: uppercase;
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .bloc .text {
@@ -72,10 +75,31 @@
   font-weight: 400;
   font-style: normal;
   font-size: 1.6rem;
-  color: black;
+  color: var(--color-black);
   line-height: 3rem;
   margin-bottom: 1rem;
 }
+.pricing{
+color:var(--color-orange);
+font-size: 3rem;
+}
+.cta {
+  background-color: var(--color-orange);
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 1rem;
+  cursor: pointer;
+  color:var(--color-white);
+  font-size: 1.8rem;
+  margin: 1rem 0;
+  border-radius: 5rem;
+  font-family: "Abhaya Libre", serif;
+  font-weight: 600;
+  font-style: normal;
+  margin: 1rem 0;
+}
+
 @media (max-width: 700px) {
   .blocsContainer .bloc {
     margin: 1rem auto;
@@ -85,6 +109,5 @@
 @media (min-width: 700px) {
   .blocsContainer .bloc {
     width: 40rem;
-    height: 35rem;
   }
 }

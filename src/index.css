@@ -54,12 +54,16 @@
 
 /* global variables */
 :root {
-  --heading-isabelline: #f9f6f2;
-  --text-lion-brown-color: #b08f6d;
-  --coyote-brown: #87694b;
-  --color-cadete-gray: #9daeb2;
-  --sage-light-green: #b2af93;
-  --color-parchment-light: #ede5d1;
+
+
+  --color-white: #FFFFFF;
+  --color-light-grey: #EAE6E1;
+  --color-light-orange: #FF9153;
+  --color-orange: #F57D49;
+  --color-black: #1A1A1A;
+  --color-very-dark-grey: #6C615D;
+  --color-dark-grey: #A18E85;
+
 }
 
 * {

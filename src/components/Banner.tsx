@@ -37,6 +37,7 @@ const dataCards: DataCard[] = [
   },
 ];
 
+
 import styles from "./Banner.module.css";
 export default function Banner() {
   return (
@@ -65,7 +66,7 @@ function Card({ data }: CardProps) {
   return (
     <div className={styles.card}>
       <div>
-        <img src={data.icon} alt={data.title} className={styles.icon} />
+      <img src={data.icon} className={styles.icon}/>
         <h3 className={styles.title}>{data.title}</h3>
         <p className={styles.description}>{data.description}</p>
       </div>

@@ -1,5 +1,5 @@
 .banner {
-  background-color: var(--sage-light-green);
+
   padding: 2rem 6rem;
 }
 
@@ -18,15 +18,17 @@
 
 .icon {
   border-radius: 50%;
-  border: 1px solid black;
+  color: var(--color-white);
+  font-weight: lighter;
   padding: 1rem;
-  width: 12rem;
-  height: 12rem;
+  width: 10rem;
+  height: 10rem;
+  background-color: var(--color-light-orange);
 }
 
 .card .title {
   font-size: 2.4rem;
-  color: var(--coyote-brown);
+  color: var( --color-black);
   margin-top: 2rem;
   font-family: "DM Sans", sans-serif;
   font-optical-sizing: auto;
@@ -40,7 +42,7 @@
   font-size: 1.8rem;
   line-height: 2.2rem;
   margin-top: 1.6rem;
-  color: var(--coyote-brown);
+  color: var( --color-black);
 }
 
 @media screen and (max-width: 700px) {

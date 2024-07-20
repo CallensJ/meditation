@@ -22,12 +22,12 @@
   font-family: "Poiret One", sans-serif;
   font-weight: 400;
   font-size: 20rem;
-  color: var(--coyote-brown);
+  color: var(--color-white);
 }
 .homepage .title3 {
   font-family: "Poiret One", sans-serif;
   font-weight: bold;
-  color: var(--heading-isabelline);
+  color: var(--color-light-orange);
   font-size: 4rem;
 }
 
