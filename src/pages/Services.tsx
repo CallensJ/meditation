@@ -1,3 +1,4 @@
+import Faqs from "../components/Faqs";
 import GetReady from "../components/GetReady";
 
 
@@ -7,6 +8,7 @@ export default function Services() {
     <div>
      
       <GetReady />
+      <Faqs />
     </div>
   )
 }
