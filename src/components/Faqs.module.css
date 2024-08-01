@@ -46,9 +46,11 @@
   grid-column: 2 / 1;
   padding-bottom: 16px;
   line-height: 1.6;
+  font-size: 1.6rem;
 }
 
 .contenBox ul {
+
   color: #868e96;
   margin-left: 16px;
   margin-top: 16px;
@@ -56,6 +58,7 @@
   flex-direction: column;
   gap: 12px;
 }
+
 
 /* OPEN STATE */
 .open {
