@@ -5,16 +5,10 @@ import Team from "../components/Team";
 import Gallery from "../components/Gallery";
 import Introduction from "../components/Introduction";
 
-
-
-
-
-
 const HomePage: React.FC = () => {
   return (
     <main className={styles.homepage}>
       <section className={styles.hero}>
-        
         <div className={styles.titlesContainer}>
           <h1>Harmonya</h1>
           <h3 className={styles.title3}>Meditation et guérison par les sons</h3>
@@ -26,12 +20,8 @@ const HomePage: React.FC = () => {
       <Banner />
       <Me />
       <Team />
-    
-   
-      
-     
     </main>
   );
-}
+};
 
 export default HomePage;
